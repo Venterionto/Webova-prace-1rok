@@ -191,6 +191,7 @@ img {
     text-align: center;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
 }
 .sword {
     max-width: 1300px;
@@ -217,16 +218,20 @@ img {
 table {
     max-width: 1300px;
     width: 100%;
-    font-size: 30px;
+    font-size: 20px;
     border: 4px double;
     border-spacing: 5px;
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
+    table-layout: fixed;
+    word-wrap: break-word;
 }
 td {
     border: 1px solid;
     padding: 10px;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 tr {
     text-align: center;
