@@ -14,16 +14,19 @@ body {
     font-family: "Andada Pro", serif;
 }
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 148, 0);
-    position: relative;
-    top: 0px;
-    width: 100%;
-    left: 0px;
-    z-index: 10000;
-    overflow-y: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 148, 0);
+  position: relative;
+  top: 0px;
+  width: 100%;
+  left: 0px;
+  z-index: 10000;
+  overflow-y: hidden;
+}
+@media screen and (max-width: 900px) {
+  ul li {float: none;}
 }
 ul .name {
     text-align: left;
@@ -64,6 +67,7 @@ li a:hover {
 li a:active {
     color: orange;
 }
+
 .active {
     background-color: rgb(216, 130, 0);
 }
@@ -91,8 +95,6 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     margin: 40px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
 }
 .blur1 {
     background-color: rgba(0, 0, 0, 0.618) ;
@@ -124,7 +126,8 @@ h1 {
     transform: translateX(-50%);
     left: 50%;
     top: 100px;
-    padding: 20px;
+    padding: 50px;
+    text-align: center;
 }
 .blur4 {
     background-color: rgba(0, 0, 0, 0.618) ;
@@ -159,17 +162,6 @@ h1 {
     padding: 20px;
     text-align: center;
 }
-.info {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 100px;
-}
-.info1 {
-    flex: 0 1 800px;
-    min-width: 250px;
-    text-align: center;
-}
 img {
     max-width: 300px;
 }
@@ -189,7 +181,7 @@ img {
 }
 .blur_tab1, .blur_tab2, .blur_tab3, .blur_tab4, .blur_tab5, .blur_tab6 {
     max-width: 1500px;
-    background-color: rgba(0, 0, 0, 0.6188);
+    background-color: rgba(0, 0, 0, 0.6188) ;
     text-align: left;
     width: 100%;
     position: relative;
@@ -198,6 +190,7 @@ img {
     padding: 50px;
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 .sword {
     max-width: 1300px;
@@ -238,5 +231,9 @@ td {
 tr {
     text-align: center;
 }
-
-
+.contact {
+    text-align: left;
+}
+td:first-child, td:last-child {
+    width: 50%;
+}
