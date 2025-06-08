@@ -21,6 +21,7 @@ ul {
   left: 0px;
   z-index: 10000;
   overflow: auto;
+  overflow-y: hidden;
 }
 ul .name {
     text-align: left;
