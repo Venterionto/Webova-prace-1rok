@@ -171,12 +171,15 @@ h1 {
 }
 img {
     max-width: 300px;
+    width: 100%
 }
 .navrh {
     max-width: 705px;
+    width: 100%;
 }
 .forged {
     max-width: 357px;
+    width: 100%
 }
 .claymore {
     position: relative;
